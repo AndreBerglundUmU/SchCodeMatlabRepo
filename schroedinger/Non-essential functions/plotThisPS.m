@@ -1,0 +1,5 @@
+figure(usedScheme)
+plotProfile(x,tempInvFour)
+title(['Time: ' num2str(TInt(1) + i*h,'%0.3g')])
+axis([-20,20,-0.6,2])
+pause(0.01)

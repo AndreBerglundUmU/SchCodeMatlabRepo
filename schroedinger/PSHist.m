@@ -1,3 +1,4 @@
+addpath('Functions')
 %% Set initial info and function
 initSeed = 1;
 batchSize = 1000;

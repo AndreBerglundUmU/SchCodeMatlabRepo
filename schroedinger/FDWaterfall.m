@@ -79,10 +79,9 @@ end
 %% Waterfall plots
 for i = 1:numUsedSchemes
     figure
-    waterFallPlot(runStorage{i},XInt,length(spaceVec),T,length(timeVec))
+    waterFallPlot(runStorage{i},XInt,TInt)
     set(gcf, 'Position', get(0, 'Screensize'));
     set(gca,'FontSize',35)
     pause(1)
-% 	printToEPS(gcf,['FDWaterfall' schemeShortNames{i}])
 % 	printToPDF(gcf,['FDWaterfall' schemes.shortNames{schemeIndexMat(i,2)}])
 end

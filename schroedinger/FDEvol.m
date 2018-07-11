@@ -125,5 +125,4 @@ axis([TInt normStorage{1}(1)+1.1*maxDownwardDrift normStorage{1}(1)+1.1*maxUpwar
 set(gcf, 'Position', get(0, 'Screensize'));
 
 pause(1)
-% printToEPS(gcf,'FDEvol')
 % printToPDF(gcf,'FDEvol')

@@ -148,5 +148,4 @@ set(gca,'FontSize',35)
 set(gcf, 'Position', get(0, 'Screensize'));
 
 pause(1)
-% printToEPS(gcf,'convTime1d')
 % printToPDF(gcf,'convTime1d')

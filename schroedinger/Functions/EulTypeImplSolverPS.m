@@ -1,4 +1,25 @@
 function [ nextU, varargout ] = EulTypeImplSolverPS(currU,kSq,dW,h,G)
+% EulTypeImplSolverFD  - Returns an implicitly solved u_{n+1} for Euler
+%                        type schemes for the stochastic Schroedingers
+%                        equation, with the pseudospectral approximation.
+% Syntax: [ nextU, varargout ] = EulTypeImplSolverPS(currU,kSq,dW,h,G)
+%
+% Input:
+% currU     - A vector of length M containing u_n in Fourier space.
+% kSq       - A vector of length M containing the squared Fourier modes
+% dW        - A scalar value of the Brownian motion.
+% h         - The time step size.
+% G         - A function handle G(u_n,u_{n+1}) approximating the nonlinearity.
+%
+% Output:
+% nextU     - A vector of length M containing u_{n+1}.
+% varargout - If asked for, a boolean value revealing whether the implicit
+%             calculation converged in 120 fixed point iterations or not.
+%
+% Non-standard dependencies: None.
+% See also: Any accompanying script for example usage.
+%           makePSSchroedSchemes.m
+
 crit = true;
 K = length(currU);
 nextU = currU;

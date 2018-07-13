@@ -1,7 +1,5 @@
 function spDeriv = finiteDifferenceSpMatrix(derivPoints,n,M)
-% finiteDifferenceSpMatrix  - Returns a square, sparse matrix which, when
-%                             multiplied with a vector containing function
-%                             values, returns a derivative approximation
+% finiteDifferenceSpMatrix  - Sparse derivative weight matrix.
 % Syntax: spDeriv = finiteDifferenceSpMatrix(derivPoints,n,M)
 %
 % Input:

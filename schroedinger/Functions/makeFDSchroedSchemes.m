@@ -1,4 +1,6 @@
 function schemes = makeFDSchroedSchemes(FDMatSq,h,sigma)
+% makePSSchroedSchemes  - FD schemes for the nonlin. Schroedingers eq.
+%
 % makeFDSchroedSchemes  - A function which will construct the schemes for
 %                         the stochastic Schroedingers equation with white
 %                         noise dispersion, with the finite difference 

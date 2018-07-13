@@ -1,6 +1,5 @@
 function printToPDF(myHandle,name)
-% printToPDF    - A function which saves the figure to PDF format in the
-%                 folder "Plots", using quality level r800.
+% printToPDF    - Save the figure to PDF format in the folder "Plots".
 % Syntax: printToPDF(myHandle,name)
 %
 % Input:
@@ -8,7 +7,7 @@ function printToPDF(myHandle,name)
 % name      - A string containing the file name
 %
 % Output:
-% A file 'name.pdf' in the folder 'Plots'.
+% A file 'name.pdf' in the folder 'Plots' with quality level r800.
 %
 % Non-standard dependencies: None.
 % See also: Any accompanying script for example usage.

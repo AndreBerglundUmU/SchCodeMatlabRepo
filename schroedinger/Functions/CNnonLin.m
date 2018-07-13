@@ -1,6 +1,5 @@
 function G = CNnonLin(u,v,sigma)
-% A short function for the nonlinearity for the Crank-Nicolson scheme for
-% the given Schroedinger equation.
+% Crank-Nicolson scheme non-linearity approximation for the given Schroedinger equation.
 % G = CNnonLin(u,v,sigma)
 if sigma == 1
     G = (absSq(u)+absSq(v)).*(u+v)/(2*(sigma+1));

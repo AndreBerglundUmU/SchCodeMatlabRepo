@@ -1,7 +1,10 @@
 function [ NStar, varargout ] = NStarSolverPS(currU,a,h,sigma)
+% NStarSolverPS  - Returns N* used in the PS SExp scheme.
+%
 % NStarSolverPS  -  Returns an implicitly solved N* for the symmetric
 %                   exponential scheme for the stochastic Schroedingers
-%                   equation, with the pseudospectral approximation.
+%                   equation, using the pseudospectral discretization.
+%
 % Syntax: [ NStar, varargout ] = NStarSolverPS(currU,a,h,sigma)
 %
 % Input:

@@ -1,5 +1,5 @@
 function ret = initModelInfo(N,TInt,M,XInt,sigma,per)
-% initModelInfo  -  Returns a struct containing the 
+% initModelInfo  -  Returns a struct containing the model info.
 % Syntax: ret = initModelInfo(N,TInt,M,XInt,sigma,per)
 %
 % Input:

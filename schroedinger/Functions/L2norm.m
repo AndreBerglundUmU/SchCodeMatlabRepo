@@ -1,5 +1,5 @@
 function ret = L2norm(u,dx,per)
-% L2norm - An approximation of the L2 norm, or the squared absolute integral
+% L2norm - An approximation of the L2 norm, or the squared absolute integral.
 % Syntax: ret = L2norm(u,dx,per)
 %
 % Input:

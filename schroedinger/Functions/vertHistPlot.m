@@ -1,6 +1,5 @@
 function vertHistPlot(storage,schemeShortNames,yAxisVector,leftTitle,axesInfo)
-% vertHistPlot  - A function which will plot several histogram samples
-%                 vertically, coupled with their titles.
+% vertHistPlot  - Vertical histograms with titles.
 % Syntax: vertHistPlot(storage,schemeShortNames,yAxisVector,leftTitle,axesInfo)
 %
 % Input:

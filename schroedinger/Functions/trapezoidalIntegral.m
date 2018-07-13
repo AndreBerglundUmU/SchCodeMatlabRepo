@@ -1,5 +1,5 @@
 function [integral] = trapezoidalIntegral(dx,f)
-% trapezoidalIntegral   - The trapezoidal integral approximation of f
+% trapezoidalIntegral   - The trapezoidal integral approximation of f.
 % Syntax: [integral] = trapezoidalIntegral(dx,f)
 %
 % Input:

@@ -1,6 +1,5 @@
 function waterFallPlot(run,XInt,TInt)
-% waterFallPlot  -  A function which will plot a waterfall plot of the 
-%                   absolute value squared.
+% waterFallPlot  -  A waterfall plot of the absolute value squared.
 % Syntax: waterFallPlot(run,XInt,TInt)
 %
 % Input:

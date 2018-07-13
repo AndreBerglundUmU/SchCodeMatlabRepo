@@ -1,7 +1,9 @@
 function [ nextU, varargout ] = EulTypeImplSolverPS(currU,kSq,dW,h,G)
-% EulTypeImplSolverFD  - Returns an implicitly solved u_{n+1} for Euler
-%                        type schemes for the stochastic Schroedingers
-%                        equation, with the pseudospectral approximation.
+% EulTypeImplSolverPS   - Implicit solver for PS Euler type schemes.
+%
+% EulTypeImplSolverPS   - Returns an implicitly solved u_{n+1} for Euler
+%                         type schemes for the stochastic Schroedingers
+%                         equation, with the pseudospectral approximation.
 % Syntax: [ nextU, varargout ] = EulTypeImplSolverPS(currU,kSq,dW,h,G)
 %
 % Input:

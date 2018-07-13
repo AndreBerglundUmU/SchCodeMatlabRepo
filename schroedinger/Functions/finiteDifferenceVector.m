@@ -1,6 +1,5 @@
 function weight = finiteDifferenceVector(derivPoints,n)
-% finiteDifferenceVector    - Calculates how to weight the points in order 
-%                             to approximate the n'th derivative.
+% finiteDifferenceVector    - FD derivative approximation weights.
 % Syntax: weight = finiteDifferenceVector(derivPoints,n)
 %
 % Input:

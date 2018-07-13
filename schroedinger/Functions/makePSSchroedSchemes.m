@@ -1,8 +1,11 @@
 function schemes = makePSSchroedSchemes(kSq,h,sigma)
+% makePSSchroedSchemes  - PS schemes for the nonlin. Schroedingers eq.
+%
 % makePSSchroedSchemes  - A function which will construct the schemes for
 %                         the stochastic Schroedingers equation with white
 %                         noise dispersion, with the pseudospectral 
 %                         approximation.
+%
 % Syntax: schemes = makePSSchroedSchemes(kSq,h,sigma)
 %
 % Input:

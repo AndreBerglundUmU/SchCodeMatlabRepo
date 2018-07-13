@@ -1,8 +1,11 @@
 function [ NStar, varargout ] = NStarSolverFD(currU,a,h,sigma)
-% NStarSolverFD  -  Returns an implicitly solved N* for the symmetric
+% NStarSolverPS  - Returns N* used in the FD SExp scheme.
+%
+% NStarSolverPS  -  Returns an implicitly solved N* for the symmetric
 %                   exponential scheme for the stochastic Schroedingers
-%                   equation, with the finite difference approximation.
-% Syntax: [ NStar, varargout ] = NStarSolverPS(currU,a,h,sigma)
+%                   equation, using the finite difference discretization.
+%
+% Syntax: [ NStar, varargout ] = NStarSolverFD(currU,a,h,sigma)
 %
 % Input:
 % currU - A vector containing u_n in physical space.

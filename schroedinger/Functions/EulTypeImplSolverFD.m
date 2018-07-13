@@ -1,4 +1,6 @@
 function [ nextU, varargout ] = EulTypeImplSolverFD(currU,FDMatSq,dW,h,G)
+% EulTypeImplSolverPS   - Implicit solver for FD Euler type schemes.
+%
 % EulTypeImplSolverFD  - Returns an implicitly solved u_(n+1) for Euler
 %                        type schemes for the stochastic Schroedingers
 %                        equation, with the finite difference approximation.

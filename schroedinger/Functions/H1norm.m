@@ -1,6 +1,5 @@
 function ret = H1norm(u,dx,k,per)
-% H1norm - An approximation of the H1 norm, or the squared absolute
-%          integral of the function and its derivative
+% H1norm - A trapezoidal integral approximation of the H1 norm.
 % Syntax: ret = H1norm(u,dx,k,per)
 %
 % Input:

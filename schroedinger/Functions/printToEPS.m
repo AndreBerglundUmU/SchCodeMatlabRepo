@@ -1,14 +1,13 @@
 function printToEPS(myHandle,name)
-% printToPDF    - A function which saves the figure to EPS format in the
-%                 folder "Plots", using quality level r800.
-% Syntax: printToPDF(myHandle,name)
+% printToEPS    - Save the figure to EPS format in the folder "Plots".
+% Syntax: printToEPS(myHandle,name)
 %
 % Input:
 % myHandle  - The handle to the figure which is to be saved
 % name      - A string containing the file name
 %
 % Output:
-% A file 'name.eps' in the folder 'Plots'.
+% A file 'name.eps' in the folder 'Plots' with quality level r800.
 %
 % Non-standard dependencies: None.
 % See also: printToPDF.m

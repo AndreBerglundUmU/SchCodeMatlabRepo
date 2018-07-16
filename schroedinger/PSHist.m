@@ -93,5 +93,4 @@ sideTitle = '$max_{n\in\{1,2,\ldots,N\}}\left(log(| ~ ||u_n||_{L^2}^2-||u_0||_{L
 vertHistPlot(logDiff,modelInfo.schemes.shortNames(schemeIndexMat(:,2)),yAxisVector,sideTitle,schemePlotSpec)
 set(gcf, 'Position', get(0, 'Screensize'));
 pause(1)
-% printToEPS(gcf,'PSHist')
 % printToPDF(gcf,'PSHist')

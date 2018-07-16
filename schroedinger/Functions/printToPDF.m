@@ -1,14 +1,17 @@
 function printToPDF(myHandle,name)
+% printToPDF    - Save the figure to PDF format in the folder "Plots".
+% Syntax: printToPDF(myHandle,name)
+%
 % Input:
-%   myHandle    - The handle to the figure which is to be saved
-%   name        - A string containing the file name
-
-%     screen_size = get(0, 'ScreenSize');
-%     origSize = get(myHandle, 'Position'); % grab original on screen size
-%     set(myHandle, 'Position', [0 0 screen_size(3) screen_size(4) ] ); %set to scren size
-%     set(myHandle,'PaperPositionMode','auto') %set paper pos for printing
-%     print(myHandle,name,'-dpdf','-r0') % save figure
-%     set(myHandle,'Position', origSize) %set back to original dimensions
+% myHandle  - The handle to the figure which is to be saved
+% name      - A string containing the file name
+%
+% Output:
+% A file 'name.pdf' in the folder 'Plots' with quality level r800.
+%
+% Non-standard dependencies: None.
+% See also: Any accompanying script for example usage.
+%           printToEPS.m
 
     set(myHandle,'Units','Inches');
     pos = get(myHandle,'Position');

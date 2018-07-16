@@ -1,4 +1,26 @@
 function schemes = makePSSchroedSchemes(kSq,h,sigma)
+% makePSSchroedSchemes  - PS schemes for the nonlin. Schroedingers eq.
+%
+% makePSSchroedSchemes  - A function which will construct the schemes for
+%                         the stochastic Schroedingers equation with white
+%                         noise dispersion, with the pseudospectral 
+%                         approximation.
+%
+% Syntax: schemes = makePSSchroedSchemes(kSq,h,sigma)
+%
+% Input:
+% kSq   - A vector of length M containing the squared Fourier modes
+% h     - The time step size.
+% sigma - The scalar controlling the non-linearity.
+%
+% Output:
+% schemes   - A struct containing the fields .fun, .longNames and
+%             .shortNames. Currently 9 schemes are implemented.
+%
+% Non-standard dependencies: absSq.m, nonLin.m, CNnonLin.m,
+%                            EulTypeImplSolverPS.m, NStarSolverPS.m.
+% See also: Any accompanying script for example usage.
+
     schemes.fun = cell(9,1);
         schemes.fun{1} = @(currU,dW) FEul(currU,kSq,dW,h,sigma);
         schemes.fun{2} = @(currU,dW) BEul(currU,kSq,dW,h,sigma);
@@ -32,7 +54,7 @@ function schemes = makePSSchroedSchemes(kSq,h,sigma)
 end
 
 function nextU = FEul(currU,kSq,dW,h,sigma)
-    % Will perform one calculation in excess
+    % Using the standard form will perform one calculation in excess:
     % nextU = EulTypeImplSolverPS(currU,kSq,sum(dW),h,@(un,unext) G(un,sigma));
     
     realSpaceCurrU = ifft(currU);

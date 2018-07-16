@@ -102,13 +102,13 @@ end
 
 % Add support lines
 numSupportLines = 2;
-translConst = [4 3];
+translConst = [1/10 1/10^2];
     
 logInArg = cell(0);
 legendInArg = cell(numSupportLines,1);
 for i = 1:numSupportLines
     logInArg(end+1:end+3) = {N,translConst(i)*N.^-i,'--k'};
-    legendInArg{i} = sprintf('N^{-%d}',i);
+    legendInArg{i} = sprintf('C_%dN^{-%d}',i,i);
 end
 
 figure
@@ -139,7 +139,7 @@ end
 set(gca,'xscale','log');
 set(gca,'yscale','log');
 loglog(logInArg{:})
-legend(refSchemes.shortNames{schemesUsed},legendInArg{:})
+legend(refSchemes.shortNames{schemesUsed},legendInArg{:},'Location','SouthWest')
 hold off
 
 xlabel('N')

@@ -16,3 +16,11 @@ function ret = refineU(u)
     ret = [u ; (u + [u(2:end) u(1)])/2];
     ret = ret(:)';
 end
+
+
+% 
+% function ret = periodicRefineVector(x)
+%     ret = zeros(1,2*length(x));
+%     ret(1:2:(end-1)) = x;
+%     ret(2:2:end) = ([x(2:end),x(1)]-x(1:end))/2;
+% end

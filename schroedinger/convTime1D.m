@@ -13,7 +13,7 @@ refh = (TInt(2)-TInt(1))/refN;
 N = 2.^(5:13); % Time
 h = (TInt(2)-TInt(1))./N;
 numN = length(N);
-M = 2^11; % Space
+M = 2^13; % Space
 dx = (XInt(2)-XInt(1))/M;
 
 u0Fun = @(x) 1./(2+sin(x).^2);

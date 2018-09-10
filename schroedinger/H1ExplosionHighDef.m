@@ -109,7 +109,7 @@ figure
 plot(squeeze(timeInfoBatch(1,1,:,1)),squeeze(timeInfoBatch(:,3,:,:)))
 set(gca,'yscale','log');
 xlabel('t')
-ylabel('$||u_N||_{H^1}^2$','Interpreter','latex')
+ylabel('$||u_n||_{H^1}^2$','Interpreter','latex')
 set(gca,'FontSize',35)
 set(gcf, 'Position', get(0, 'Screensize'));
 
